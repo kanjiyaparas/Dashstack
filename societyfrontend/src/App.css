@@ -1,0 +1,337 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.drawer {
+  font-family: "Poppins", sans-serif !important;
+  color: #4F4F4F !important;
+  min-height: 100vh !important;
+  overflow: scroll;
+}
+.drawer::-webkit-scrollbar{
+  display: none !important;
+}
+
+.scroll_number::-webkit-scrollbar{
+  display: none !important;
+}
+
+.css-cokf1l-MuiListItemIcon-root {
+  min-width: 40px !important;
+}
+
+.css-jupps9-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 12px !important;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+
+}
+
+.w-49 {
+  width: 49% !important;
+}
+.w-32 {
+  width: 32% !important;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+
+}
+
+.with-line {
+  position: relative;
+}
+
+.with-line::after {
+  content: "";
+  position: absolute;
+  top: 55%;           /* Center vertically */
+  right: 0;           /* Align to the right */
+  transform: translateY(-50%); /* Adjust position to truly center */
+  border-left: 1px solid #b9b3b3;
+  height: 60%;        /* Control the height of the line */
+}
+
+a {
+  text-decoration: none;
+  color: black !important;
+}
+
+.btn_primary {
+  background: linear-gradient(#FE512E, #F09619) !important;
+  color: white !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+}
+
+.btn_outline {
+  color: #FE512E !important;
+  background-color: white !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  border: 2px solid #FE512E !important;
+}
+
+.selected_tab {
+  width: 5px !important;
+  background-color: #FE512E !important;
+  height: 40px !important;
+  border-top-right-radius: 5px !important;
+  border-end-end-radius: 5px !important;
+}
+
+.selected_subtab {
+  width: 3px !important;
+  background-color: black !important;
+  height: 40px !important;
+}
+
+.notSelected_subtab {
+  width: 3px !important;
+  background-color: lightgray !important;
+  height: 40px !important;
+}
+
+.MuiPaper-root {
+  --Paper-shadow: none !important;
+}
+
+.text_primary {
+  color: #FE512E !important;
+}
+
+.focus {
+  display: block !important;
+  width: 5px !important;
+  height: 40px !important;
+  border-top-right-radius: 5px !important;
+  border-end-end-radius: 5px !important;
+  background-color: #FE512E !important;
+}
+
+.Occupied {
+  color: #14B8A6 !important;
+  background-color: #ecffffd1 !important;
+  border: 1px solid #14B8A6 !important;
+}
+
+.Vacant {
+  color: #9333EA !important;
+  background-color: #9233ea15 !important;
+  border: 1px solid #9333EA !important;
+}
+
+.Owner {
+  color: #4F46E5 !important;
+  background-color: #4e46e524 !important;
+  border: 1px solid #4F46E5 !important;
+}
+
+.Tenant {
+  color: #EC4899 !important;
+  background-color: #ec489a15 !important;
+  border: 1px solid #EC4899 !important;
+}
+
+.Day {
+  color: darkgoldenrod !important;
+  background-color: rgba(255, 255, 0, 0.121) !important;
+  border: 1px solid darkgoldenrod !important;
+}
+
+.Night {
+  color: white !important;
+  background-color: darkslategray !important;
+  border: 1px solid black !important;
+}
+
+.Male {
+  color: #4F46E5 !important;
+  background-color: #4e46e524 !important;
+  border: 1px solid #4F46E5 !important;
+}
+
+.Female {
+  color: #EC4899 !important;
+  background-color: #ec489a15 !important;
+  border: 1px solid #EC4899 !important;
+}
+
+.penalty{
+  color: white !important;
+  background-color: rgb(255, 144, 144) !important;
+  border: 1px solid red!important;
+}
+
+.Paid {
+  color: green !important;
+  background-color: rgba(0, 128, 0, 0.121) !important;
+  border: 1px solid green !important;
+}
+
+.Pending {
+  color: darkgoldenrod !important;
+  background-color: rgba(255, 255, 0, 0.121) !important;
+  border: 1px solid darkgoldenrod !important;
+}
+
+.Online {
+  color: black !important;
+  background-color: rgba(0, 0, 0, 0.159) !important;
+  border: 1px solid black !important;
+}
+
+.Cash {
+  color: #4F46E5 !important;
+  background-color: #4e46e524 !important;
+  border: 1px solid #4F46E5 !important;
+}
+.High{
+  color: white !important;
+  width: 80px !important;
+  background-color: red !important;
+}
+.Medium{
+  color: white !important;
+  width: 80px !important;
+  background-color: #5678E9 !important;
+}
+.Low{
+  color: white !important;
+  width: 80px !important;
+  background-color: green !important;
+}
+.Open {
+  color: #4F46E5 !important;
+  width: 80px !important;
+  background-color: #4e46e524 !important;
+  border: 1px solid #4F46E5 !important;
+}
+.Solve {
+  color: green !important;
+  width: 80px !important;
+  background-color: rgba(0, 128, 0, 0.121) !important;
+  border: 1px solid green !important;
+}
+.Empty {
+  color: grey !important;
+  width: 80px !important;
+  background-color: rgba(0, 0, 0, 0.159) !important;
+  border: 1px solid grey !important;
+}
+
+.box {
+  border: 3px dotted grey !important;
+  width: 100% !important;
+  border-radius: 8px !important;
+}
+
+.custom-section, .custom-section2{
+  position: relative;
+  border-radius: 8px;
+  width: 200px;
+  padding-left: 15px;
+}
+
+.custom-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 50px;
+  background-color: currentColor;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.custom-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background-color: currentColor;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.custom-section2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 50px;
+  background-color: red;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.custom-section2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 3px;
+  background-color: red;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.custom-section:nth-of-type(1) {
+  color: green;
+}
+
+.custom-section:nth-of-type(2) {
+  color: red !important;
+}
+
+.login_card input {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+  outline: none;
+}
+
+.hover_box {
+  display: none;
+}
+.hover_box  button:active + .hover_box  {
+  height: 0;
+  display: none !important;
+}
+.icon_hover:hover  .hover_box {
+  display: inline-block;
+}
+
+.icon_hover:hover {
+  color: #FE512E;
+}
+
+/* facility css */
+
+.enabled {
+  color: orange;
+  background-color: white;
+}
+
+.enabled:hover {
+  color: darkorange;
+}
+
+.disabled {
+  color: gray;
+  background-color: white;
+  cursor: not-allowed;
+}
