@@ -25,8 +25,9 @@ export default function LoginScreen({ Auth, userInfo, setAuth }) {
       const userData = jwt.decode(result.data.token)
       if (userData && userData.role === "Security") {
         return navigate(Path.visitor)
+      }else{
+        navigate(Path.DashboardScreen)
       }
-      navigate(Path.DashboardScreen)
     } catch (error) {
       console.log(error)
       enqueueSnackbar('Something Wrong in Login!', { variant: 'error' })
