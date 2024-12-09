@@ -48,6 +48,29 @@ class MaintenanceDetailsController {
     }
   }
 
+  async getallpendingmaintenance(req,res){
+    try {
+      const {societyId} = req.params
+      const result = await maintenanceDetailsModel.model.find({ societyId: societyId, paymentStatus: "Pending" }).populate([
+        { path: "maintenanceId" },
+        {
+          path: "memberId", populate: [
+            { path: "userId" },
+            { path: "wing" },
+            { path: "unit" },
+          ]
+        },
+      ])
+
+      if(!result) throw httpErrors[400]
+      return res.status(200).send({message:httpSuccess , data:result})
+
+    } catch (error) {
+      console.log(error)
+      throw httpErrors[500]
+    }
+  }
+
   async getMaintenanceDetailsByMember(req, res) {
     try {
       const { id } = req.params

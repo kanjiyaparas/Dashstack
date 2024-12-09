@@ -85,7 +85,7 @@ export default function SecurityProtocol({ societyId, userInfo }) {
     setSelectedProtocolId(null);
   };
 
-
+ 
   const listprotocol = async () => {
     try {
       setisLoading(true)

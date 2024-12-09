@@ -20,4 +20,5 @@ maintenanceDetailsRouter.get("/list/:id", asyncHandler(maintenanceDetailsControl
 
 maintenanceDetailsRouter.put("/update", asyncHandler(maintenanceDetailsController.updateMaintenanceDetails))
 
+maintenanceDetailsRouter.get("/getlist/:societyId" , asyncHandler(maintenanceDetailsController.getallpendingmaintenance))
 module.exports = maintenanceDetailsRouter

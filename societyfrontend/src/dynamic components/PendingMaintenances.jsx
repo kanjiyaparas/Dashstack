@@ -10,7 +10,8 @@ const PendingMaintenances = ({userInfo}) => {
 const [pendingMaintennance , setpendingMaintenance] = useState([])
   async function getpendingMaintenance() {
     try {
-      const result = await apiHelper.pendingMaintenance(userInfo?.societyData?._id)
+      const id = userInfo?.societyData?.societyId ? userInfo?.societyData?.societyId : userInfo?.societyData?.selectSociety
+      const result = await apiHelper.alllistMaintenance(id)
       setpendingMaintenance(result.data.data)
     } catch (error) {
       console.log(error)

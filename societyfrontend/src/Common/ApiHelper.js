@@ -3,6 +3,7 @@ import axios from "axios"
 class ApiHelper {
   constructor() {
     this.baseUrl = "https://dashstack-pxmh.onrender.com"
+    // this.baseUrl = "http://localhost:5000"
   }
   loginUser(data) {
     return axios.post(this.baseUrl + "/user/login", data)
@@ -70,6 +71,9 @@ class ApiHelper {
   }
   listMaintenance(societyId) {
     return axios.get(this.baseUrl + "/maintain-detail/member/" + societyId)
+  }
+  alllistMaintenance(societyId){
+    return axios.get(this.baseUrl + "/maintain-detail/getlist/"+ societyId)
   }
   dueMaintenance(memberId) {
     return axios.get(this.baseUrl + "/maintain-detail/due/" + memberId)

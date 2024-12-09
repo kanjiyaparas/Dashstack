@@ -19,7 +19,8 @@ console.log(userInfo)
  console.log(eventData)
   const getEvent = async () => {
     try {
-      const result = await apiHelper.listevent(userInfo.societyData.societyId)
+      const id = userInfo?.societyData?.societyId ? userInfo?.societyData?.societyId : userInfo?.societyData?.selectSociety
+      const result = await apiHelper.listevent(id)
       console.log(result)
       if (result && result.data) {
         seteventData(result.data.data)
