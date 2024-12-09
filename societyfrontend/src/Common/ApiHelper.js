@@ -2,7 +2,7 @@ import axios from "axios"
 
 class ApiHelper {
   constructor() {
-    this.baseUrl = "http://localhost:5000"
+    this.baseUrl = "https://dashstack-pxmh.onrender.com"
   }
   loginUser(data) {
     return axios.post(this.baseUrl + "/user/login", data)
